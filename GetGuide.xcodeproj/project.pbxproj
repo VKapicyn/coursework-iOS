@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		AA75DD4B2611FB0A003F5752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA75DD492611FB0A003F5752 /* Main.storyboard */; };
 		AA75DD4D2611FB0D003F5752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA75DD4C2611FB0D003F5752 /* Assets.xcassets */; };
 		AA75DD502611FB0D003F5752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA75DD4E2611FB0D003F5752 /* LaunchScreen.storyboard */; };
+		AA75DD5926120BE9003F5752 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD5826120BE9003F5752 /* ProgressController.swift */; };
+		AA75DD5C26121CB7003F5752 /* GuidesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD5B26121CB7003F5752 /* GuidesController.swift */; };
+		AA75DD5F261303E5003F5752 /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD5E261303E5003F5752 /* GuideModel.swift */; };
+		AA75DD6726130EA2003F5752 /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD6626130EA2003F5752 /* GuideTableViewCell.swift */; };
+		AA75DD6A2613112B003F5752 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD692613112B003F5752 /* Loader.swift */; };
+		AA75DD6D26132774003F5752 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD6C26132773003F5752 /* GuideViewController.swift */; };
+		AA75DD7126139C8C003F5752 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75DD7026139C8C003F5752 /* OrderController.swift */; };
+		AA75DD762613ADB1003F5752 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AA75DD752613ADB1003F5752 /* SDWebImage */; };
+		AA75DD782613ADB1003F5752 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA75DD772613ADB1003F5752 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		AA75DD4C2611FB0D003F5752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA75DD4F2611FB0D003F5752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA75DD512611FB0D003F5752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA75DD5826120BE9003F5752 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		AA75DD5B26121CB7003F5752 /* GuidesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesController.swift; sourceTree = "<group>"; };
+		AA75DD5E261303E5003F5752 /* GuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideModel.swift; sourceTree = "<group>"; };
+		AA75DD6626130EA2003F5752 /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
+		AA75DD692613112B003F5752 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		AA75DD6C26132773003F5752 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		AA75DD7026139C8C003F5752 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA75DD782613ADB1003F5752 /* SDWebImageMapKit in Frameworks */,
+				AA75DD762613ADB1003F5752 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +78,16 @@
 				AA75DD452611FB0A003F5752 /* SceneDelegate.swift */,
 				AA75DD472611FB0A003F5752 /* ViewController.swift */,
 				AA75DD492611FB0A003F5752 /* Main.storyboard */,
+				AA75DD7026139C8C003F5752 /* OrderController.swift */,
+				AA75DD6C26132773003F5752 /* GuideViewController.swift */,
 				AA75DD4C2611FB0D003F5752 /* Assets.xcassets */,
 				AA75DD4E2611FB0D003F5752 /* LaunchScreen.storyboard */,
 				AA75DD512611FB0D003F5752 /* Info.plist */,
+				AA75DD5826120BE9003F5752 /* ProgressController.swift */,
+				AA75DD5E261303E5003F5752 /* GuideModel.swift */,
+				AA75DD5B26121CB7003F5752 /* GuidesController.swift */,
+				AA75DD692613112B003F5752 /* Loader.swift */,
+				AA75DD6626130EA2003F5752 /* GuideTableViewCell.swift */,
 			);
 			path = GetGuide;
 			sourceTree = "<group>";
@@ -83,6 +108,10 @@
 			dependencies = (
 			);
 			name = GetGuide;
+			packageProductDependencies = (
+				AA75DD752613ADB1003F5752 /* SDWebImage */,
+				AA75DD772613ADB1003F5752 /* SDWebImageMapKit */,
+			);
 			productName = GetGuide;
 			productReference = AA75DD402611FB0A003F5752 /* GetGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +139,9 @@
 				Base,
 			);
 			mainGroup = AA75DD372611FB0A003F5752;
+			packageReferences = (
+				AA75DD742613ADB0003F5752 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = AA75DD412611FB0A003F5752 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA75DD5F261303E5003F5752 /* GuideModel.swift in Sources */,
+				AA75DD6726130EA2003F5752 /* GuideTableViewCell.swift in Sources */,
+				AA75DD6D26132774003F5752 /* GuideViewController.swift in Sources */,
+				AA75DD5926120BE9003F5752 /* ProgressController.swift in Sources */,
 				AA75DD482611FB0A003F5752 /* ViewController.swift in Sources */,
 				AA75DD442611FB0A003F5752 /* AppDelegate.swift in Sources */,
+				AA75DD7126139C8C003F5752 /* OrderController.swift in Sources */,
+				AA75DD5C26121CB7003F5752 /* GuidesController.swift in Sources */,
+				AA75DD6A2613112B003F5752 /* Loader.swift in Sources */,
 				AA75DD462611FB0A003F5752 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +380,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA75DD742613ADB0003F5752 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA75DD752613ADB1003F5752 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA75DD742613ADB0003F5752 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		AA75DD772613ADB1003F5752 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA75DD742613ADB0003F5752 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA75DD382611FB0A003F5752 /* Project object */;
 }
